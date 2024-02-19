@@ -13,7 +13,9 @@
 <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <?php
 if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; }
-echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url"><span itemprop="name">' . esc_html( get_bloginfo( 'name' ) ) . '</span></a>';
+echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url">';
+echo '<img src="images_planty/Logo.png" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" itemprop="logo">';
+echo'</a>';
 if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
 ?>
 </div>
