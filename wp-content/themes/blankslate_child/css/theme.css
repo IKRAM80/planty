@@ -13,12 +13,19 @@ header{
 p {
    color: #313332;
 }
-
+.flex-between{
+display:flex;
+justify-content: space-between;
+}
 #header{
    display:flex;
 }
 
-/*backgraound gris header*/
+/*backgraound blanc header*/
 .header-bg{
    background-color: #FFFFFF;
+}
+.text-center{
+   text-align: center;
+   text-decoration: none;
 }
