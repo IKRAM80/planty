@@ -14,7 +14,7 @@
 <?php
 if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; }
 echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url">';
-echo '<img src="images_planty/Logo.png" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" itemprop="logo">';
+echo '<img src="http://localhost:8080/planty/wp-content/uploads/2024/02/Logo-1.png" alt="Logo"  />';
 echo'</a>';
 if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
 ?>
