@@ -17,16 +17,45 @@ p {
 .flex-between{
 display:flex;
 justify-content: space-between;
+align-items: center;
+height: 100%;
+background-color: #FFFFFF;
 }
 #header{
    display:flex;
-   height: 80px;
-   width: 1440px;
+   height: 100%;
+   
+}
+#menu-menu-1 {
+   display: flex;
+   justify-content: space-between; /* Pour répartir les éléments horizontalement */
+   align-items: center;
+   height: 100%;
+   
+}
+#menu-item-76{
+   padding: 20px;
+}
+#menu-item-74{
+   padding: 20px;
+   margin-top: 0px;
+}
+#menu-item-74 >a{
+   background-color: #DC9F96;
+   display: block;
+   padding: 20px 30px;
+   color: #FFFFFF;
+   height: 100%;
+   
+}
+#menu-item-74 >a:hover{
+   background-color: #C02E44;
 }
 
 /*backgraound blanc header*/
 .header-bg{
    background-color: #FFFFFF;
+   height: 100%;
 }
 .text-center{
    text-align: center;
@@ -34,4 +63,9 @@ justify-content: space-between;
 }
 a {
    text-decoration: none;
+   color: black;
+}
+.logo-img {
+   max-width: 150px; /* Taille maximale du logo */
+   height: auto; /* Pour conserver les proportions */
 }

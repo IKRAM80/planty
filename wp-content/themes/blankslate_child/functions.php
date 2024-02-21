@@ -40,7 +40,10 @@ function theme_enqueue_styles() {
 		) ) );
 		}
 		add_action('customize_register', 'your_theme_new_customizer_settings');
-	
+		function theme_prefix_setup() {
+			add_theme_support( 'custom-logo' );
+		}
+		add_action( 'after_setup_theme', 'theme_prefix_setup' );
 	
 	
 	
