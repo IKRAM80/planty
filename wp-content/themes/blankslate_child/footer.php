@@ -3,7 +3,7 @@
 </main>
 
 </div>
-<footer id="footer" role="contentinfo" class="text-center">
+<footer id="footer" role="contentinfo" >
 <div>
 <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 </div>
