@@ -74,3 +74,29 @@ a {
    height: 100px ;
    padding: 50px;
 }
+.wpcf7-form-control{
+  
+  border: #FFFFFF;
+  border-radius: 7px;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+.wpcf7-text{
+   width: 383px;
+  height: 71px; 
+  border-radius: 7px;
+}
+.wpcf7-textarea{
+   width: 383px;
+  height: 237px; 
+}
+.wpcf7-submit{
+   width: 198px;
+  height: 55px; 
+  border-radius: 5px;
+ 
+  margin: 0 auto;
+  display: block;
+
+}
+
