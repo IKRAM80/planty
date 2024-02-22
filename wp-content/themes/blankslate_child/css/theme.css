@@ -81,7 +81,7 @@ a {
  margin-top: 15px;
  margin-bottom: 15px;
 }
-.wpcf7-text{
+.wpcf7-text {
    width: 383px;
   height: 71px; 
   border-radius: 7px;
@@ -94,9 +94,13 @@ a {
    width: 198px;
   height: 55px; 
   border-radius: 5px;
- 
-  margin: 0 auto;
+   margin: 0 auto;
   display: block;
 
+}
+.wpcf7-number {
+   width: 383px;
+  height: 71px; 
+  border-radius: 7px;
 }
 
