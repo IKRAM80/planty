@@ -39,17 +39,10 @@ function theme_enqueue_styles() {
 		'settings' => 'your_theme_logo',
 		) ) );
 		}
+		add_action('customize_register', 'your_theme_new_customizer_settings');
 		
-		function add_admin_link_to_menu( $items, $args ) {
-			// Vérifie si l'utilisateur est connecté
-			if ( is_user_logged_in() ) {
-				// Ajoute le lien "Admin" à la fin du menu
-				$items .= '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
-			}
-			return $items;
-		}
-		add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
-		
+	
+	
 	
 	
 	

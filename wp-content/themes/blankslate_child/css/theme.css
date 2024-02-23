@@ -18,12 +18,13 @@ p {
 display:flex;
 justify-content: space-between;
 align-items: center;
-height: 100%;
+
 background-color: #FFFFFF;
 }
 #header{
    display:flex;
-   height: 100%;
+
+   height: 80px;
    
 }
 #menu-menu-1 {
@@ -34,7 +35,7 @@ background-color: #FFFFFF;
    
 }
 #menu-item-76{
-   padding: 20px;
+   padding: 0px;
 }
 #menu-item-74{
    padding: 20px;
@@ -55,7 +56,7 @@ background-color: #FFFFFF;
 /*backgraound blanc header*/
 .header-bg{
    background-color: #FFFFFF;
-   height: 100%;
+   height: 80px;
 }
 
 a {
@@ -77,18 +78,18 @@ a {
 .wpcf7-form-control{
   
   border: #FFFFFF;
-  border-radius: 7px;
- margin-top: 15px;
+  margin-top: 15px;
  margin-bottom: 15px;
 }
-.wpcf7-text {
-   width: 383px;
-  height: 71px; 
-  border-radius: 7px;
-}
+
 .wpcf7-textarea{
    width: 383px;
   height: 237px; 
+}
+.wpcf7 input{
+   width: 60%;
+   height: 71px; 
+   border-radius: 7px; 
 }
 .wpcf7-submit{
    width: 198px;
@@ -98,9 +99,19 @@ a {
   display: block;
 
 }
-.wpcf7-number {
-   width: 383px;
-  height: 71px; 
-  border-radius: 7px;
+#panier input{
+ width: 39px;
+ height: 56px; 
+ margin-bottom: 20px; 
+ border-radius: 0px;
+ text-align: center;
+
+ margin: 0;
+  
 }
+.elementor-element-9fe8ae8{
+   border-left: 1px solid #FFFFFF;
+}
+   
+
 
