@@ -10,6 +10,7 @@ function theme_enqueue_styles() {
 	register_nav_menus(array(
 		'header'=> __('En tete du menu'),
 		'footer'=> __('bas de page'),
+		'header1'
 	)
 	);
 
