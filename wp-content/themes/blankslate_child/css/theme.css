@@ -5,14 +5,16 @@ body * {
    background-color: E5E5E5;
 }
 
-header{
-   display:none;
-
-}
 
 /* On applique un gris plus clair sur les paragraphes */
 p {
    color: #313332;
+}
+/* Enlever le mot: commander modifier dans le header */
+
+header{
+   display:none;
+
 }
 .flex-between{
 display:flex;
@@ -35,7 +37,7 @@ background-color: #FFFFFF;
    
 }
 #menu-item-76{
-   padding: 0px;
+   padding: 30px;
 }
 #menu-item-74{
    padding: 20px;
@@ -43,11 +45,13 @@ background-color: #FFFFFF;
 }
 #menu-item-74 >a{
    background-color: #DC9F96;
-   display: block;
-   padding: 20px 30px;
+   padding: 32px 61px;
+   margin-right: -41px;
    color: #FFFFFF;
-   height: 100%;
-   
+}
+
+.menu-item{
+   margin-right: 20px;
 }
 #menu-item-74 >a:hover{
    background-color: #C02E44;
@@ -75,6 +79,8 @@ a {
    height: 100px ;
    padding: 50px;
 }
+/* Les formulaires */
+
 .wpcf7-form-control{
   
   border: #FFFFFF;
@@ -108,8 +114,7 @@ label{
  width: 39px;
  height: 56px; 
  border-radius: 0px;
- text-align: center;
-  margin: 0;
+ margin: 0;
  }
 .section-panier { 
    text-align: center;
@@ -124,6 +129,7 @@ label{
    text-align: center;
 }
 
+/* Les boreders de la page commander */
 
 .elementor-element-94513f7{
    border-top: 1px solid #FFFFFF;

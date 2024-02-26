@@ -10,37 +10,27 @@ function theme_enqueue_styles() {
 	register_nav_menus(array(
 		'header'=> __('En tete du menu'),
 		'footer'=> __('bas de page'),
-		'header1'
+		
 	)
 	);
 
 	
 /* HOOK FILTER */
 
-add_filter('show_admin_bar', '__return_false');
 
-add_filter('wp_nav_menu_items', 'admin_link', 10, 2);
+add_filter('wp_nav_menu_items', 'add_admin_button', 10, 2);
 
 
-function admin_link($items, $args)
-{
-
-    if (is_user_logged_in()) {
-        $adminlink = admin_url();
-        $siteurl = site_url();
-        $items .= '<li class="menu-item"><a href="' . site_url('/nous-rencontrer') . '">Nous rencontrer</a></li>';
-        $items .= '<li class="menu-item"><a href="' . $adminlink . '">Admin</a></li>';
-        $items .= '<li class="menu-commander"><a href="' . site_url('/commander') . '">Commander</a></li>';
-        return $items;
-
-    } else {
-        $items .= '<li class="menu-item"><a href="' . site_url('/nous-rencontrer') . '">Nous rencontrer</a></li>';
-        $items .= '<li class="menu-commander"><a href="' . site_url('/commander') . '">Commander</a></li>';
-        return $items;
-    }
+function add_admin_button($items, $args){
+	if (is_user_logged_in() && $args->theme_location == 'header') {
+	$admin_link = '<li class="menu-item"><a href="'.site_url().'/wp-admin/">Admin</a></li>';
+	$menu_items = explode('</li>', $items);
+	$insert_index = 1;
+	array_splice($menu_items, $insert_index, 0, $admin_link);
+	$items = implode('</li>', $menu_items);
+	}
+return $items;
 }
-
-
 	
 	
 	
