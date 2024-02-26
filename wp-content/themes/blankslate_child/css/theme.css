@@ -5,16 +5,16 @@ body * {
    background-color: E5E5E5;
 }
 
-
-/* On applique un gris plus clair sur les paragraphes */
-p {
-   color: #313332;
+/*backgraound blanc header*/
+.header-bg{
+   background-color: #FFFFFF;
+   height: 80px;
 }
+
 /* Enlever le mot: commander modifier dans le header */
 
 header{
    display:none;
-
 }
 .flex-between{
 display:flex;
@@ -25,10 +25,14 @@ background-color: #FFFFFF;
 }
 #header{
    display:flex;
-
-   height: 80px;
-   
+   height: 80px; 
 }
+.logo-img {
+   max-width: 150px; /* Taille maximale du logo */
+   height: auto; /* Pour conserver les proportions */
+   padding-left: 30px;
+}
+
 #menu-menu-1 {
    display: flex;
    justify-content: space-between; /* Pour répartir les éléments horizontalement */
@@ -45,7 +49,7 @@ background-color: #FFFFFF;
 }
 #menu-item-74 >a{
    background-color: #DC9F96;
-   padding: 32px 61px;
+   padding: 31px 61px;
    margin-right: -41px;
    color: #FFFFFF;
 }
@@ -57,27 +61,17 @@ background-color: #FFFFFF;
    background-color: #C02E44;
 }
 
-/*backgraound blanc header*/
-.header-bg{
-   background-color: #FFFFFF;
-   height: 80px;
-}
-
 a {
    text-decoration: none;
    color: black;
 }
-.logo-img {
-   max-width: 150px; /* Taille maximale du logo */
-   height: auto; /* Pour conserver les proportions */
-   padding-left: 30px;
-}
+
 #footer{
    text-align: center;
    align-items: center;
    background-color: #FFFFFF;
-   height: 100px ;
-   padding: 50px;
+   height: 60px;
+   padding-top: 20px;
 }
 /* Les formulaires */
 
@@ -101,6 +95,7 @@ label{
    height: 71px; 
    border-radius: 7px; 
    margin-bottom: 30px;
+   text-align: center;
 }
 .wpcf7-submit{
    width: 198px;
@@ -129,7 +124,7 @@ label{
    text-align: center;
 }
 
-/* Les boreders de la page commander */
+/* Les lignes dans la page commander */
 
 .elementor-element-94513f7{
    border-top: 1px solid #FFFFFF;
