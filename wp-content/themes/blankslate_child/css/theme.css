@@ -81,6 +81,7 @@ a {
    border: #FFFFFF; 
    border-radius: 7px; 
    margin-bottom: 30px;
+   margin-top: 10px;
 }
 #panier input{
    width: 39px;
@@ -93,9 +94,18 @@ a {
 }
 label{
    color: #FFFFFF;
+   margin-bottom: 20px;
 }
-p label{
-   color: black;
+.elementor-element-ba3c973 label{
+   color: black; 
+   margin-top: 20px;
+}
+.elementor-element-ba3c973 input{
+   border-radius: 7px;
+   margin-top: 10px;
+}
+.elementor-element-71743f7 input{
+   border-radius: 7px;
 }
 
 .wpcf7-textarea{
@@ -140,6 +150,7 @@ p label{
 
 .elementor-element-9fe8ae8{
    border-left: 1px solid #FFFFFF;
+  
 }
 .elementor-element-bc19399 {
    padding-top: 20px;
@@ -158,6 +169,54 @@ p label{
    padding-top: 20px;
 }
 
-   
+  /****** Media queries ***********/
+  /* Small devices (phones, less than 590px) */
+@media (max-width: 590px) { 
+  
+   #menu-item-74{
+         padding: 0px;
+         margin-top: 0px;
+      }
+      #menu-item-74 >a{
+         background-color: #DC9F96;
+         padding: 8px 0px;
+         margin-right: -41px;
+         margin-bottom:20px;
+         color: #FFFFFF;
+      }
+      .flex-between{
+         display:flex;
+         flex-direction: column;
+         }  
+         .logo-img {
+            margin-top: 20px;
+         }
+      #header{
+         height: 100px;
+      }
+      .wpcf7-text{
+         width: 80%;
+      }
+
+   }
+   @media (min-width: 350px) { 
+      #menu-item-76{
+         padding-right: 0px;
+         padding-left: 0px;
+      }
+   @media (max-width: 350px) { 
+         #menu-item-76{
+            
+            padding-right: 0px;
+            padding-left: 0px;
+         }
+         .menu-item{
+         margin-right: 0px;
+
+      }
+   }
+}
+      
+      
 
 
