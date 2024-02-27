@@ -13,7 +13,7 @@ body * {
 
 /* Enlever le mot: commander modifier dans le header */
 
-header{
+.header{
    display:none;
 }
 .flex-between{
@@ -65,7 +65,7 @@ a {
    text-decoration: none;
    color: black;
 }
-
+/* footer */
 #footer{
    text-align: center;
    align-items: center;
@@ -75,42 +75,45 @@ a {
 }
 /* Les formulaires */
 
-.wpcf7-form-control{
-  
-  border: #FFFFFF;
-  margin-top: 15px;
- margin-bottom: 15px;
+.wpcf7-text{
+   width: 100%;
+   height: 71px;
+   border: #FFFFFF; 
+   border-radius: 7px; 
+   margin-bottom: 30px;
 }
-
+#panier input{
+   width: 39px;
+   height: 56px; 
+   margin: 0;
+   text-align: center;
+}
+.wpcf7-form-control{
+   border-radius: 7px;
+}
 label{
    color: #FFFFFF;
+}
+p label{
+   color: black;
 }
 
 .wpcf7-textarea{
    width: 383px;
   height: 237px; 
+  border: #FFFFFF; 
 }
-.wpcf7 input{
-   width: 100%;
-   height: 71px; 
-   border-radius: 7px; 
-   margin-bottom: 30px;
-   text-align: center;
-}
+
 .wpcf7-submit{
    width: 198px;
   height: 55px; 
   border-radius: 5px;
    margin: 0 auto;
   display: block;
+  border: #FFFFFF; 
 
 }
-#panier input{
- width: 39px;
- height: 56px; 
- border-radius: 0px;
- margin: 0;
- }
+
 .section-panier { 
    text-align: center;
 }
