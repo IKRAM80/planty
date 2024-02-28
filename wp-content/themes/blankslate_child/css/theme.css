@@ -2,7 +2,7 @@
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
    font-family: 'Syne', sans-serif;
-   background-color: E5E5E5;
+   
 }
 
 /*backgraound blanc header*/
