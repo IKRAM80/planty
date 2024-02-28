@@ -199,23 +199,33 @@ label{
       }
 
    }
-   @media (min-width: 350px) { 
-      #menu-item-76{
-         padding-right: 0px;
-         padding-left: 0px;
-      }
+  
    @media (max-width: 350px) { 
+         #header{
+            height: 110px;
+         }
+         #menu-menu-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: flex-start;
+         }
          #menu-item-76{
-            
-            padding-right: 0px;
-            padding-left: 0px;
+            padding: 0px 5px;
+            margin-left: 5px;
+
          }
          .menu-item{
-         margin-right: 0px;
-
-      }
+            padding: 5px;
+            margin-left: 5px;
+         }
+         #menu-item-74{
+            padding: 5px;
+            margin-right: 0px;
+         }
    }
-}
+   
+
       
       
 
