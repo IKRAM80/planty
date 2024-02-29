@@ -192,10 +192,15 @@ label{
             margin-top: 20px;
          }
       #header{
-         height: 100px;
+         height: 100%;
+         width: 100%;
       }
       .wpcf7-text{
          width: 80%;
+      }
+      .wpcf7-textarea{
+         width: 80%;
+         height: 80%;
       }
 
    }
