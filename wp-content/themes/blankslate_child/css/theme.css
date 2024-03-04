@@ -76,36 +76,64 @@ a {
 /* Les formulaires */
 
 .wpcf7-text{
-   width: 100%;
+   width: 380px;
    height: 71px;
    border: #FFFFFF; 
    border-radius: 7px; 
    margin-bottom: 30px;
    margin-top: 10px;
 }
-#panier input{
+.section-panier { 
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   margin-bottom: 40px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #FFFFFF; ;
+   
+
+}
+.panier input{
    width: 39px;
    height: 56px; 
    margin: 0;
    text-align: center;
 }
+
+.form-info h3{
+   color: #FFFFFF;
+   font-size: 30px;
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+.form-livraison h3{
+   color: #FFFFFF;
+   font-size: 30px;
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+.section-command{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+.form-info{
+   width: 100%;
+   
+}
+.form-livraison{
+   width:100%;
+   border-left: 1px solid #FFFFFF; 
+   padding-left: 30px;
+}
+
 .wpcf7-form-control{
    border-radius: 7px;
 }
 label{
    color: #FFFFFF;
    margin-bottom: 20px;
-}
-.elementor-element-ba3c973 label{
-   color: black; 
-   margin-top: 20px;
-}
-.elementor-element-ba3c973 input{
-   border-radius: 7px;
-   margin-top: 10px;
-}
-.elementor-element-71743f7 input{
-   border-radius: 7px;
+   
 }
 
 .wpcf7-textarea{
@@ -113,7 +141,9 @@ label{
   height: 237px; 
   border: #FFFFFF; 
 }
-
+.conteneur-bouton-command{
+   margin-top: 20px;
+}
 .wpcf7-submit{
    width: 198px;
   height: 55px; 
@@ -124,56 +154,50 @@ label{
 
 }
 
-.section-panier { 
-   text-align: center;
-}
-.elementor-element-2eb23cf{
-   text-align: center;
-}
-.elementor-element-658dab7{
-   text-align: center;
-}
-.elementor-element-315c5d7{
-   text-align: center;
-}
 
-/* Les lignes dans la page commander */
 
-.elementor-element-94513f7{
-   border-top: 1px solid #FFFFFF;
-   padding-top: 50px;
-}
-.elementor-element-55c34b4{
-   border-top: 1px solid #FFFFFF;
-   
-}
-
-.elementor-element-9fe8ae8{
-   border-left: 1px solid #FFFFFF;
-  
-}
-.elementor-element-bc19399 {
-   padding-top: 20px;
-
-}
-.elementor-element-774c650{
-   padding-top: 20px;
-   padding-left: 20px;
-}
-.elementor-element-3afb8b9{
-   padding-left: 20px;
-   padding-top: 20px;
-}
-.elementor-element-4ff8576 {
-   padding-right: 20px;
-   padding-top: 20px;
-}
 
   /****** Media queries ***********/
+  @media (max-width: 920px ) {
+   .wpcf7-text{
+      width: 230px;
+      height: 71px;
+      border: #FFFFFF; 
+      border-radius: 7px; 
+      margin-bottom: 30px;
+      margin-top: 10px;
+   }
+.form-info{
+   width: 30%;
+   
+}
+.form-livraison{
+   width:30%;
+   border-left: 1px solid #FFFFFF; 
+   padding-left: 20px;
+}
+.section-command{
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+}
+.form-info h3{
+   color: #FFFFFF;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 40px;
+}
+.form-livraison h3{
+   color: #FFFFFF;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 40px;
+}
+}
   /* Small devices (phones, less than 590px) */
 @media (max-width: 590px) { 
   
-   #menu-item-74{
+      #menu-item-74{
          padding: 0px;
          margin-top: 0px;
       }
@@ -202,6 +226,7 @@ label{
          width: 80%;
          height: 80%;
       }
+      
 
    }
   
