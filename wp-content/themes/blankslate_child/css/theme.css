@@ -65,6 +65,9 @@ a {
    text-decoration: none;
    color: black;
 }
+.elementor-element-94513f7 h3{
+   margin-top: 30px;
+}
 /* footer */
 #footer{
    text-align: center;
@@ -74,7 +77,9 @@ a {
    padding-top: 20px;
 }
 /* Les formulaires */
-
+.elementor-element-68ffa43 label{
+   color: black;
+}
 .wpcf7-text{
    width: 380px;
    height: 71px;
@@ -88,16 +93,17 @@ a {
    justify-content: space-around;
    text-align: center;
    margin-bottom: 40px;
-   padding-bottom: 20px;
-   border-bottom: 1px solid #FFFFFF; ;
-   
-
+   padding-bottom: 40px;
+   border-bottom: 1px solid #FFFFFF;
+   border-radius: 0px;
 }
+
 .panier input{
    width: 39px;
    height: 56px; 
    margin: 0;
    text-align: center;
+   border-radius: 0px;
 }
 
 .form-info h3{
@@ -126,8 +132,11 @@ a {
    border-left: 1px solid #FFFFFF; 
    padding-left: 30px;
 }
+.form-info p{
+   border-radius: 7 px;
+}
 
-.wpcf7-form-control{
+.wpcf7-form-control-wrap input{
    border-radius: 7px;
 }
 label{
@@ -153,12 +162,22 @@ label{
   border: #FFFFFF; 
 
 }
+.section-command{
+   border-radius: 7px;
+}
 
 
 
 
   /****** Media queries ***********/
   @media (max-width: 920px ) {
+   #menu-item-74 >a{
+      
+      padding: 20px 20px;
+      margin-right: -4px;
+      margin-bottom:20px;
+      
+   }
    .wpcf7-text{
       width: 230px;
       height: 71px;
@@ -168,18 +187,18 @@ label{
       margin-top: 10px;
    }
 .form-info{
-   width: 30%;
+   width: 80%;
    
 }
 .form-livraison{
-   width:30%;
+   width:80%;
    border-left: 1px solid #FFFFFF; 
    padding-left: 20px;
 }
 .section-command{
    display: flex;
    justify-content: space-between;
-   gap: 5px;
+   gap: 20px;
 }
 .form-info h3{
    color: #FFFFFF;
@@ -195,7 +214,7 @@ label{
 }
 }
   /* Small devices (phones, less than 590px) */
-@media (max-width: 590px) { 
+@media (max-width: 520px) { 
   
       #menu-item-74{
          padding: 0px;
@@ -226,6 +245,22 @@ label{
          width: 80%;
          height: 80%;
       }
+      .section-command{
+         display: flex;
+        flex-direction: column;
+         gap: 5px;
+      }
+      .form-info{
+         width: 100%;
+         
+      }
+      .form-livraison{
+         width:100%;
+         border-left: 1px solid #FFFFFF; 
+         padding-left: 20px;
+      }
+      
+
       
 
    }
@@ -252,6 +287,20 @@ label{
          #menu-item-74{
             padding: 5px;
             margin-right: 0px;
+         }
+         .section-command{
+            display: flex;
+           flex-direction: column;
+            gap: 5px;
+         }
+         .form-info{
+            width: 100%;
+            
+         }
+         .form-livraison{
+            width:100%;
+            border-left: 1px solid #FFFFFF; 
+            padding-left: 20px;
          }
    }
    
